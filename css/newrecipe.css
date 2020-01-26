@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+body{
+    margin:0px;
+    font-family: 'Muli', sans-serif;
+    background: rgb(255,255,255);
+    height: 100vh;
+    overflow-x: hidden;
+    width: 100vw;
+    background: linear-gradient(334deg, rgba(255,255,255,1) 45%, rgba(255,184,11,1) 45%);
+    background-repeat: no-repeat;
+}
+div{
+    font-size: 18px;
+}
+/* Styling Navbar and inputs */
+/****************************/
+.search-btn{
+    color:#FFB80B;
+    border-color: #FFB80B;
+}
+.search-btn:hover{
+    background-color: #FFB80B;
+    border-color: #FFB80B;
+}
+.search-btn:active{
+}
+.search-btn:active{
+    background-color: #FFB80B!important;
+    border-color: #FFB80B!important;
+    box-shadow: 0 1px 2px 0 #FFB80B, 0 6px 20px 0 rgba(0, 0, 0, 0.19)!important;
+
+}
+.search-btn:active:focus {
+    color: #ffffff; 
+    background-color: #161617; 
+    border-color: #494F57;
+  }
+  
+.form-control:focus{border-color: #FFB80B;  box-shadow: none; -webkit-box-shadow: none;} 
+.has-error .form-control:focus{box-shadow: none; -webkit-box-shadow: none;}
+
+/*End of Styling Navbar and inputs*/
+/* Styling New Recipe Page/ newrecipes.html */
+/****************************/
+.main-newrec{
+    margin: 40px 0px 0px 20px ;
+    width: 100vw;
+    
+}
+.form-header{
+    margin-bottom: 50px;
+}
+
+label{
+    margin-bottom: -15px;
+}
+textarea{
+resize: none;
+}
+@media(min-width:800px){
+
+    .my-form{
+        width: 33vw;
+        height: 400px!
+    }
+}
+.sub-btn{
+    background-color: white;
+}
