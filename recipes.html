@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-
-    <!--CSS Linking-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" <!--CSS
+        Linking-->
     <link rel="stylesheet" href="css/recipes.css">
     <title>Koujina | Tunisian recipes made with love</title>
 </head>
@@ -20,12 +20,12 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <a class="navbar-brand" href="#">Koujina</a>
+            <a class="navbar-brand navbar-brand-text" href="#">Koujina</a>
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                 <li class="nav-item active">
                     <a class="nav-link" href="recipes.html">Browse <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item ">
                     <a class="nav-link" href="newrecipe.html">Add a recipe</a>
                 </li>
                 <li class="nav-item">
@@ -45,23 +45,29 @@
     <div id="main-body">
         <div class="col-lg-4 col-12" id="categories">
             <div class="categ-name" id="meal-type">
-                <h2>Meal Type</h2>
-                <div> Appetizers</div>
-                <div> Breakfast & Brunch</div>
-                <div> Desserts</div>
-                <div> Dinner</div>
+                <h4>Meal Type </h4>
+                <div >
+                    <div> Appetizers</div>
+                    <div> Breakfast & Brunch</div>
+                    <div> Lunch / Dinner</div>
+                    <div> Desserts</div>
+                </div>
             </div>
             <div class="categ-name" id="dish-type">
-                <h2>Dish Type</h2>
-                <div> Salads</div>
-                <div> Breads</div>
-                <div> Soups</div>
+                <h4>Dish Type </h4>
+                <div >
+                    <div> Salads</div>
+                    <div> Breads</div>
+                    <div> Soups</div>
+                </div>
             </div>
             <div class="categ-name" id="healthy-food">
-                <h2>Healthy Food</h2>
-                <div> Salads</div>
-                <div> Breads</div>
-                <div> Soups</div>
+                <h4>Healthy Food <i id="healthy-food-icon" class="fas fa-sort-down   "></i></h4>
+                <div class="sub-categ">
+                    <div> Salads</div>
+                    <div> Breads</div>
+                    <div> Soups</div>
+                </div>
             </div>
 
         </div>
@@ -110,6 +116,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>

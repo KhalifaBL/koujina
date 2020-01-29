@@ -9,6 +9,11 @@ div{
 }
 /* Styling Navbar and inputs */
 /****************************/
+.navbar-brand-text{
+    color:#FFB80B!important;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.19);
+
+}
 .search-btn{
     color:#FFB80B;
     border-color: #FFB80B;
@@ -68,7 +73,8 @@ div{
     margin: 20px;
 }
 .search-card:hover{
-    transform: scale(1.006);
+    transform: scale(1.019);
+    transition: transform 0.4s;
     cursor: pointer;
 }
 @media (max-width:1200px){
@@ -99,6 +105,12 @@ div{
 .rec-infos{
     color:#7F7F7F;
     font-size:0.75em;
+}
+.categ-name h4:hover{
+cursor: pointer;
+}
+.sub-categ{
+    display: none;
 }
 /*End of Styling Browse Page/ recipes.html*/
 

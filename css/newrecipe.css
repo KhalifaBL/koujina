@@ -5,6 +5,7 @@ body{
     background: rgb(255,255,255);
     height: 100vh;
     overflow-x: hidden;
+    min-width: 450px;
     width: 100vw;
     background: linear-gradient(334deg, rgba(255,255,255,1) 45%, rgba(255,184,11,1) 45%);
     background-repeat: no-repeat;
@@ -14,6 +15,11 @@ div{
 }
 /* Styling Navbar and inputs */
 /****************************/
+.navbar-brand-text{
+    color:#FFB80B!important;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.19);
+
+}
 .search-btn{
     color:#FFB80B;
     border-color: #FFB80B;
@@ -64,6 +70,35 @@ resize: none;
         height: 400px!
     }
 }
+@media only screen and (max-width:600px){
+
+    html{
+    width: 100vw;
+    height: 120vh;
+    overflow-x: hidden;
+    }
+    body{
+    margin:auto;
+    font-family: 'Muli', sans-serif;
+    background: rgb(255,255,255);
+    height: 100%;
+    overflow-x: hidden;
+    width: 100vw;
+    background-color: rgba(255,184,11,1);
+    
+    }
+    .main-newrec{
+        height: 100%;
+        min-width: 300px;
+        max-width: 400px;
+        margin-left: 0px;
+
+    }
+}
 .sub-btn{
     background-color: white;
+}
+select{
+    margin-left: 13px;
+    
 }
