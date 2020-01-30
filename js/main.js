@@ -25,11 +25,12 @@ function sendRecipe(e) {
     var recName = document.getElementById('recipe-name').value;
     var recDesc = document.getElementById('recipe-desc').value;
     var recMealType = document.getElementById('recipe-meal-type').value;
-    var recPrepTime = document.getElementById('recipe-prep-time').value + ' mins';
-    var recCookTime = document.getElementById('recipe-cook-time').value + ' mins';
+    var recPrepTime = document.getElementById('recipe-prep-time').value;
+    var recCookTime = document.getElementById('recipe-cook-time').value;
     var recPhotoUrl = document.getElementById('recipe-photo-url').value;
-    window.alert('Submission Done!');
+    document.getElementById('new-recipe-form').reset();	
     writeRecipesToFB(recName, recDesc, recMealType, recPrepTime, recCookTime, recPhotoUrl);
+    window.alert('Submission Done!');
 }
 var recipeRef = database.ref('recipes/');
 function writeRecipesToFB(recName, recDesc, recMealType, recPrepTime, recCookTime, recPhotoUrl) {
