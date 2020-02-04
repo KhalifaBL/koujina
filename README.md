@@ -79,7 +79,8 @@ function submitForm(e) {
 // Get a reference to the database service
 var mydatabase = firebase.database();
 
-//For basic write operations, you can use set() to save data to a specified reference, replacing any existing data at that //path. In our case, we might add a recipe with set() as follows:
+//For basic write operations, you can use set() to save data to a specified reference, 
+//replacing any existing data at that path. In our case, we might add a recipe with set() as follows:
 function sendDataToFireBase(name, lastname, email) {
 
     mydatabase.ref('recipes/'+name).set({
