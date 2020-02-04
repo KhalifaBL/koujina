@@ -32,6 +32,7 @@ What things you need to install the software and how to install them
 ```
 
 ### Writing Data to Firebase Realtime Database
+#### Adding Firebase configuration to your JS file
 In order to write data to your Firebase Realtime Database, you need to add your firebase configuration to your JS file along with all the code under this section.
 You can find it at:
 * Project Overview> Project Parameters> General Parameters> Firebase SDK snippet > Config
@@ -54,3 +55,38 @@ firebase.initializeApp(firebaseConfig);
 firebase.analytics();
 ```
 Note that you should add the firebase.analytics if you checked the firebase analytics option while creating your project.
+#### Getting the Data from the form
+```
+// Add an EventListener on the form you want to read data from
+document.getElementById('my-form').addEventListener('submit', submitForm);
+
+// Then define the function that will handle the submit event
+function submitForm(e) {
+    e.preventDefault(); // to prevent the page from refreshing
+
+    var name = document.getElementById('exampleInputName').value;
+    var lastname = document.getElementById('exampleInputLastName').value;
+    var email = document.getElementById('exampleInputEmail').value;
+
+    // This is the function that gonna send the data to firebase, we will define it in the next section
+    sendDataToFireBase(name, lastname, email);
+    alert('Submission Done!')
+}
+
+```
+#### Sending Data to Firebase
+```
+// Get a reference to the database service
+var mydatabase = firebase.database();
+
+//For basic write operations, you can use set() to save data to a specified reference, replacing any existing data at that //path. In our case, we might add a recipe with set() as follows:
+function sendDataToFireBase(name, lastname, email) {
+
+    mydatabase.ref('recipes/'+name).set({
+        name: name,
+        lastname: lastname,
+        email: email
+    })
+}
+
+```
